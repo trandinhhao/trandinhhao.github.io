@@ -1,1 +1,70 @@
-HELLO
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Đình Hào - Software Engineer</title>
+    <meta name="description" content="Trần Đình Hào - Software Engineer with experience in backend development, Spring Boot, and full-stack technologies">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .command-output .section-title {
+            color: #81a2be !important;
+        }
+        .headline.hidden,
+        .subtitle.hidden,
+        .prompt-line.hidden, 
+        .input-line.hidden,
+        .nav-links a.hidden {
+            opacity: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1 class="headline hidden">Trần Đình Hào</h1>
+            <p class="subtitle hidden">Backend Engineer</p>
+        </header>
+        
+        <div class="terminal" id="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn btn-close"></span>
+                    <span class="btn btn-minimize"></span>
+                    <span class="btn btn-maximize"></span>
+                </div>
+                <div class="terminal-title">hao@portfolio — -zsh — 80×24</div>
+            </div>
+            <div class="terminal-content">
+                <div class="terminal-output" id="output">
+                    <div class="prompt-line hidden">
+                    <span class="prompt-path">/dev/trandinhhao</span>
+                    <span class="prompt-symbol">&gt;</span>
+                    <span class="prompt-command">ls</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#" data-command="about" class="hidden">about</a>
+                    <a href="#" data-command="experience" class="hidden">experience</a>
+                    <a href="#" data-command="education" class="hidden">education</a>
+                    <a href="#" data-command="skills" class="hidden">skills</a>
+                    <a href="#" data-command="projects" class="hidden">projects</a>
+                    <a href="#" data-command="awards" class="hidden">awards</a>
+                    <a href="#" data-command="certifications" class="hidden">certifications</a>
+                    <a href="#" data-command="contact" class="hidden">contact</a>
+                </div>
+            </div>
+            
+            <div class="input-line hidden">
+                <span class="prompt-path">/dev/trandinhhao</span>
+                <span class="prompt-symbol">&gt;</span>
+                <span class="input-text" id="inputText"></span>
+                <span class="cursor" id="cursor">_</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
